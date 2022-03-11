@@ -39,7 +39,10 @@ describe("fibSeq", () => {
     })
 })
 
-// b) Create the function that makes the test pass.
+//Received a fail for fibSeq is not defined
+
+
+//b) Create the function that makes the test pass.
 const fibSeq = (num) => {
     let fibArr = [1,1]
     for(var i=1; i < num -1; i++){
@@ -49,7 +52,7 @@ const fibSeq = (num) => {
     return fibArr
 }
 
-
+/** Received all green passing tests **/
 
 // --------------------2) Create a function that takes in an array and returns a new array of only odd numbers sorted from least to greatest.
 /** Pseudo
@@ -78,6 +81,8 @@ describe("onlyOdds", () => {
     })
 })
 
+//Received a fail for onlyOdds is not defined
+
 // b) Create the function that makes the test pass.
 const onlyOdds = (arr) => {
     let oddNumbers = arr.filter(n => {
@@ -85,6 +90,8 @@ const onlyOdds = (arr) => {
     })
     return oddNumbers.sort((i,j) => i - j)
 }
+
+/** I got all green passing tests!!!!! **/
 
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
@@ -112,11 +119,17 @@ describe("sumOfArray", () => {
     })
 })
 
+//Received a fail for sumOfArray is not defined
+
 // b) Create the function that makes the test pass.
 
 const sumOfArray = (arr) => {
     let arrAccumulate = 0
-    return arr.map(n => {
-        return arrAccumulate += n
+    return arr.map(n => { return arrAccumulate += n
     })
 }
+
+
+/** I got all green passing tests **/
+
+//
